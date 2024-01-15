@@ -7,7 +7,7 @@ import '../models/weather_model.dart';
 import 'package:http/http.dart' as http;
 
 class WeatherService {
-  static const URL = "https://api.specialfox.top/weather/";
+  static const URL = "使用openweather api";
 
   Future<Weather> queryWeather(String cityName) async {
     final res = await http.get(Uri.parse('$URL$cityName'));
